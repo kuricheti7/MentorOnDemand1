@@ -1,0 +1,17 @@
+<div class="container" style="padding: 20px">
+    <h2>Completed Trainings</h2>
+    
+    <table border="1" cellspacing="0" cellpadding="15">
+      <tr><th>ID</th><th>Course Name</th><th>Mentor Name</th><th>Student Name</th><th>Amount Received</th><th>End Date</th></tr>
+      <tr *ngFor = "let oneOf of trainings">
+        <td>{{oneOf.id}}</td>
+                <td>{{oneOf.courseName}}</td>
+                <td>{{oneOf.mentorFirstName}}</td>
+                <td>{{oneOf.userFirstName}}</td>
+                <td>{{oneOf.amountReceived}}</td>
+                <td>{{oneOf.endDate}}</td>
+                
+        
+      </tr>
+    </table>
+    </div>

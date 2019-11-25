@@ -1,0 +1,51 @@
+<div class="container" style="padding-top: 100px; width: 2500px;">
+    <div class="row">
+        <div>
+        <div class="card-deck">
+            <div class="card" style="width:200px; height:250px; color: white;">
+                <span style="padding: 15px; color: goldenrod" class="fa fa-search"></span>
+                <div class="card-body">
+                    <h4 class="card-title">Find Trainings</h4>
+                    <p>Search for available Trainings</p>
+                    <a routerLink="/userdb/applytraining" class="btn btn-warning">View</a>
+
+                </div>
+            </div>
+
+            <div class="card" style="width:200px; height:250px; color: white;">
+                <span style="padding: 15px; color: goldenrod" class="fa fa-search"></span>
+                <div class="card-body">
+                    <h4 class="card-title">Completed Trainings</h4>
+                    <p>Search for completed Courses</p>
+                    <a routerLink="/userdb/usercompleted" class="btn btn-warning">View</a>
+
+                </div>
+            </div>
+
+            <div class="card" style="width:200px; height:250px; color: white;">
+                <span style="padding: 15px; color: goldenrod" class="fa fa-search"></span>
+                <div class="card-body">
+                    <h4 class="card-title">OnGoing Trainings</h4>
+                    <p>Search for Ongoing Courses</p>
+                    <a routerLink="/userdb/userongoing" class="btn btn-warning">View</a>
+
+                </div>
+            </div>
+
+            <div class="card" style="width:200px; height:250px; color: white;">
+                    <span style="padding: 15px; color: goldenrod" class="fa fa-user"></span>
+                    <div class="card-body">
+                        <h4 class="card-title">Profile</h4>
+                        <p>Look and Upgrade yourself</p>
+                        <div style="padding-top:30px"></div>
+                        <a routerLink="/userdb/userprofile/" class="btn btn-warning">View</a>
+    
+                    </div>
+                </div>
+        </div>
+        <div>
+<router-outlet></router-outlet>
+        </div>
+        </div>
+    </div> 
+

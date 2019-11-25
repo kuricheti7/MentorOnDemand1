@@ -1,0 +1,153 @@
+<div class="py-5">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <span class="anchor" id="formLogin"></span>
+
+            <!-- form card login -->
+            <div class="card rounded-0">
+                <div class="card-header">
+                    <h3 class="mb-0">Mentor Profile</h3>
+                </div>
+                <div class="card-body">
+                    <form class="form" #MentorForm="ngForm">
+
+                        <div class="form-group"
+                            [class.has-error]="addCourseIdControl.invalid && addCourseIdControl.touched"
+                            [class.has-success]="addCourseIdControl.valid">
+                            <label for="password" class="control-label">Mentor Id</label>
+                            <input type="text" [(ngModel)]="mentordetails.id" name="id"
+                             class="form-control rounded-0" #addCourseIdControl="ngModel" required disabled>
+                               
+                            <span class="help-block text-danger"
+                                *ngIf="addCourseIdControl.invalid && addCourseIdControl.touched">
+                                Course Id is Required
+                            </span>
+                        </div>
+
+                        <div class="form-group"
+                            [class.has-error]="addCoursecoursenameControl.invalid && addCoursecoursenameControl.touched"
+                            [class.has-success]="addCoursecoursenameControl.valid">
+                            <label for="email" class="control-label">First Name</label>
+                            <input type="text" [(ngModel)]="mentordetails.firstName" id="cname" 
+                            
+                                name="firstname" class="form-control rounded-0" #addCoursecoursenameControl="ngModel"
+                                required disabled>
+                            <span class="help-block text-danger"
+                                *ngIf="addCoursecoursenameControl.invalid && addCoursecoursenameControl.touched">
+                                Course Name is Required
+                            </span>
+                        </div>
+
+                        <div class="form-group"
+                            [class.has-error]="addCoursecoursenameControl.invalid && addCoursecoursenameControl.touched"
+                            [class.has-success]="addCoursecoursenameControl.valid">
+                            <label for="email" class="control-label">Last Name</label>
+                            <input type="text" [(ngModel)]="mentordetails.lastName" id="cname" 
+                            
+                                name="lastname" class="form-control rounded-0" #addCoursecoursenameControl="ngModel"
+                                required disabled>
+                            <span class="help-block text-danger"
+                                *ngIf="addCoursecoursenameControl.invalid && addCoursecoursenameControl.touched">
+                                Course Name is Required
+                            </span>
+                        </div>
+
+                        <div class="form-group"
+                            [class.has-error]="addCoursecoursenameControl.invalid && addCoursecoursenameControl.touched"
+                            [class.has-success]="addCoursecoursenameControl.valid">
+                            <label for="email" class="control-label"> Email</label>
+                            <input type="text" [(ngModel)]="mentordetails.email" id="url" 
+                            
+                                name="email" class="form-control rounded-0" #addCoursecoursenameControl="ngModel"
+                                required disabled>
+                            <span class="help-block text-danger"
+                                *ngIf="addCoursecoursenameControl.invalid && addCoursecoursenameControl.touched">
+                                Url is Required
+                            </span>
+                        </div>
+
+                          
+
+                        <div class="form-group"
+                            [class.has-error]="addCoursecoursefeeControl.invalid && addCoursecoursefeeControl.touched"
+                            [class.has-success]="addCoursecoursefeeControl.valid">
+                            <label for="coursefee" class="control-label">Linked In Url</label>
+                            <input type="text" [(ngModel)]="mentordetails.linkedInUrl" id="coursefee" name="linkedInUrl"
+                            
+                                class="form-control rounded-0" #addCoursecoursefeeControl="ngModel" required disabled>
+                            <span class="help-block text-danger"
+                                *ngIf="addCoursecoursenameControl.invalid && addCoursecoursenameControl.touched">
+                                Interest is Required
+                            </span>
+                        </div>
+
+                        <div class="form-group"
+                            [class.has-error]="addCoursecoursefeeControl.invalid && addCoursecoursefeeControl.touched"
+                            [class.has-success]="addCoursecoursefeeControl.valid">
+                            <label for="coursefee" class="control-label">Contact Number</label>
+                            <input type="number" [(ngModel)]="mentordetails.phoneNumber" id="coursefee" name="phoneNumber"
+                            
+                                class="form-control rounded-0" #addCoursecoursefeeControl="ngModel" required disabled>
+                            <span class="help-block text-danger"
+                                *ngIf="addCoursecoursenameControl.invalid && addCoursecoursenameControl.touched">
+                                Interest is Required
+                            </span>
+                        </div>
+
+                        <div class="form-group"
+                            [class.has-error]="addCoursecoursefeeControl.invalid && addCoursecoursefeeControl.touched"
+                            [class.has-success]="addCoursecoursefeeControl.valid">
+                            <label for="coursefee" class="control-label">Years of Experience</label>
+                            <input type="number" [(ngModel)]="mentordetails.yearsOfExp" id="coursefee" name="yearsOfExp"
+                            
+                                class="form-control rounded-0" #addCoursecoursefeeControl="ngModel" required disabled>
+                            <span class="help-block text-danger"
+                                *ngIf="addCoursecoursenameControl.invalid && addCoursecoursenameControl.touched">
+                                Interest is Required
+                            </span>
+                        </div>
+
+                         
+
+                        <!-- <div class="form-group"
+                            [class.has-error]="addCourseDescriptionControl.invalid && addCourseDescriptionControl.touched"
+                            [class.has-success]="addCourseDescriptionControl.valid">
+                            <label for="email" class="control-label">Course Details</label>
+                            <input type="text" [(ngModel)]="courseUpdateData.cdesc" id="cdesc"
+                           
+                                name="cdesc" class="form-control rounded-0"
+                                #addCourseDescriptionControl="ngModel" required>
+                            <span class="help-block text-danger"
+                                *ngIf="addCourseDescriptionControl.invalid && addCourseDescriptionControl.touched">
+                                Course Details is Required
+                            </span>
+                        </div>
+
+                        <div class="form-group"
+                            [class.has-error]="addCourseDateControl.invalid && addCourseDateControl.touched"
+                            [class.has-success]="addCourseDateControl.valid">
+                            <label for="email" class="control-label">Duration</label>
+                            <input type="text" [(ngModel)]="courseUpdateData.duration" id="coursetiming"
+                            
+                                name="duration" class="form-control rounded-0" #addCourseDateControl="ngModel"
+                                required>
+                            <span class="help-block text-danger"
+                                *ngIf="addCourseDateControl.invalid && addCourseDateControl.touched">
+                                Duration is Required
+                            </span>
+                        </div>
+ -->
+
+                        <button type="button" (click)="editMentor()" [disabled]="MentorForm.invalid"
+                            class="btn btn-primary float-right">Edit Profile</button>
+                    </form>
+                </div>
+                <!--/card-block-->
+            </div>
+            <!-- /form card login -->
+
+        </div>
+
+
+    </div>
+</div>

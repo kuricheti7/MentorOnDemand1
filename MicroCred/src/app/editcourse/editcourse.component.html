@@ -1,0 +1,98 @@
+<div class="py-5">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <span class="anchor" id="formLogin"></span>
+
+            <!-- form card login -->
+            <div class="card rounded-0">
+                <div class="card-header">
+                    <h3 class="mb-0">Edit Courses</h3>
+                </div>
+                <div class="card-body">
+                    <form class="form" #courseAddForm="ngForm">
+
+                        <div class="form-group"
+                            [class.has-error]="addCourseIdControl.invalid && addCourseIdControl.touched"
+                            [class.has-success]="addCourseIdControl.valid">
+                            <label for="password" class="control-label">Course Id</label>
+                            <input type="text" [(ngModel)]="courseUpdateData.id" name="id"
+                             class="form-control rounded-0" #addCourseIdControl="ngModel" required>
+                               
+                            <span class="help-block text-danger"
+                                *ngIf="addCourseIdControl.invalid && addCourseIdControl.touched">
+                                Course Id is Required
+                            </span>
+                        </div>
+
+                        <div class="form-group"
+                            [class.has-error]="addCoursecoursenameControl.invalid && addCoursecoursenameControl.touched"
+                            [class.has-success]="addCoursecoursenameControl.valid">
+                            <label for="email" class="control-label">Course Name</label>
+                            <input type="text" [(ngModel)]="courseUpdateData.courseName" id="courseName" 
+                            
+                                name="courseName" class="form-control rounded-0" #addCoursecoursenameControl="ngModel"
+                                required>
+                            <span class="help-block text-danger"
+                                *ngIf="addCoursecoursenameControl.invalid && addCoursecoursenameControl.touched">
+                                Course Name is Required
+                            </span>
+                        </div>
+
+                          <div class="form-group"
+                            [class.has-error]="addCoursecoursefeeControl.invalid && addCoursecoursefeeControl.touched"
+                            [class.has-success]="addCoursecoursefeeControl.valid">
+                            <label for="coursefee" class="control-label">Course Fee</label>
+                            <input type="number" [(ngModel)]="courseUpdateData.fee" id="fee" name="fee"
+                            
+                                class="form-control rounded-0" #addCoursecoursefeeControl="ngModel" required>
+                            <span class="help-block text-danger"
+                                *ngIf="addCoursecoursenameControl.invalid && addCoursecoursenameControl.touched">
+                                Course Fee is Required
+                            </span>
+                        </div>  
+
+                        
+
+                        <div class="form-group">
+                            <label for="subject">
+                                Slot</label>
+
+                            <select type="number" class="form-control" [(ngModel)]="courseUpdateData.cTimings" name="cTimings"
+                                #ctimings="ngModel" placeholder="Please Select One" required="required">
+                                <option disabled selected="selected">--Select One--</option>
+                                <option value="1">11am - 1pm</option>
+                                <option value="2">2pm - 4pm</option>
+                                <option value="3">5pm - 7pm</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group"
+                            [class.has-error]="addCourseDescriptionControl.invalid && addCourseDescriptionControl.touched"
+                            [class.has-success]="addCourseDescriptionControl.valid">
+                            <label for="email" class="control-label">Course Details</label>
+                            <input type="text" [(ngModel)]="courseUpdateData.courseDesc" id="courseDesc"
+                           
+                                name="courseDesc" class="form-control rounded-0"
+                                #addCourseDescriptionControl="ngModel" required>
+                            <span class="help-block text-danger"
+                                *ngIf="addCourseDescriptionControl.invalid && addCourseDescriptionControl.touched">
+                                Course Details is Required
+                            </span>
+                        </div>
+
+                        
+
+
+                        <button type="button" (click)="editCourse()" [disabled]="courseAddForm.invalid"
+                            class="btn btn-primary float-right">Update</button>
+                    </form>
+                </div>
+                <!--/card-block-->
+            </div>
+            <!-- /form card login -->
+
+        </div>
+
+
+    </div>
+</div>

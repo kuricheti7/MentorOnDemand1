@@ -1,0 +1,21 @@
+<div class="container" style="padding: 20px">
+        <h2>Mentor List</h2>
+        
+        <table border="1" cellspacing="0" cellpadding="15">
+          <tr><th>ID</th><th>First Name</th><th>Last Name</th><th>Email Id</th><th>Experience</th><th>linkedInUrl</th><th>Delete</th></tr>
+          <tr *ngFor = "let user of mentors">
+            <td>{{user.id}}</td>
+            <td>{{user.firstName}}</td>
+            <td>{{user.lastName}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.yearsOfExp}}</td>
+            <td>{{user.linkedInUrl}}</td>
+            <td align="center"><button type="button" class="btn btn-{{user.isActive?'warning' :'info'}}" (click)="BlockUser(user.id)"><i class="fa fa-ban mr-1"></i>{{user.isActive?"Block" :"Activate"}}</button></td>
+            
+          </tr>
+        </table>
+          <!-- <div>
+              <h3 class="error">{{error_message}}</h3>
+              <h3 class="error">Please Note : Delete & Update has not been implemented yet</h3>
+          </div> -->
+        </div>

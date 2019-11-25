@@ -1,0 +1,18 @@
+<div class="container" style="padding: 20px">
+    <h2>Trainings List</h2>
+    
+    <table border="1" cellspacing="0" cellpadding="15">
+      <tr><th>ID</th><th>Course Name</th><th>Student Name</th><th>Mentor Name</th><th>Progress</th><th>Commission</th><th>Payment Status</th></tr>
+      <tr *ngFor = "let training of trainings">
+        <td>{{training.id}}</td>
+                <td>{{training.courseName}}</td>
+                <td>{{training.userFirstName}}</td>
+                <td>{{training.mentorFirstName}}</td>
+                <td>{{training.progress}}</td>
+                <td>{{training.commissionAmount}}</td>
+                <td>{{training.paymentStatus}}</td>
+               
+        
+      </tr>
+    </table>
+    </div>

@@ -1,0 +1,321 @@
+<div class="container">
+
+    
+    <div class="album">
+        
+      <div class="container">
+          
+          <div class="row">
+              <div class="d-flex justify-content-center">
+<div *ngFor="let user of courses">
+               <div class="d-flex justify-content-center">
+                  
+                    <div class="" style="padding-top:10px"></div>
+                    <div class="card">
+                      <div class="card__image-container">
+                        <img class="card__image" src="{{user.url}}" alt="">
+                      </div>
+                      <svg class="card__svg" viewBox="0 0 800 500">
+    
+                        <path
+                          d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500"
+                          stroke="transparent" fill="#333" />
+                        <path class="card__line"
+                          d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400"
+                          stroke="pink" stroke-width="3" fill="transparent" />
+                      </svg>
+    
+                      <div class="card__content" style="padding: 10px">
+                        <h1 class="card__title">{{user.cname}}</h1>
+                        <p>{{user.cdesc}}
+                        </p>
+                      </div>
+                    
+                  
+                </div> 
+</div>
+                
+            <!-- <div class="d-flex justify-content-center">
+              <div class="col-md-6">
+                <div class="" style="padding-top:10px"></div>
+                <div class="card">
+                  <div class="card__image-container">
+                    <img class="card__image" src="../../assets/images/mongo2.png" alt="">
+                  </div>
+                  <svg class="card__svg" viewBox="0 0 800 500">
+
+                    <path
+                      d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500"
+                      stroke="transparent" fill="#333" />
+                    <path class="card__line"
+                      d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400"
+                      stroke="pink" stroke-width="3" fill="transparent" />
+                  </svg>
+
+                  <div class="card__content" style="padding: 10px">
+                    <h1 class="card__title">MongoDB</h1>
+                    <p>MongoDB is an open source database management system (DBMS) that uses a document-oriented
+                      database model which supports various forms of data. ... Instead
+                      of using tables and rows as in relational databases, the MongoDB architecture is made up of
+                      collections and documents.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center ">
+              <div class="col-md-6">
+
+                <div class="" style="padding-top:10px"></div>
+                <div class="card">
+
+                  <div class="card__image-container">
+                    <img class="card__image"
+                      src="../../assets/images/nodejs.png"
+                      alt="">
+                  </div>
+
+                  <svg class="card__svg" viewBox="0 0 800 500">
+
+                    <path
+                      d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500"
+                      stroke="transparent" fill="#333" />
+                    <path class="card__line"
+                      d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400"
+                      stroke="pink" stroke-width="3" fill="transparent" />
+                  </svg>
+
+                  <div class="card__content">
+                    <h1 class="card__title">Node Js</h1>
+                    <p>Node.js is a platform built on Chrome's JavaScript runtime for easily building fast and scalable
+                      network applications. ... Node.js is an open source, cross-platform runtime environment for
+                      developing server-side and networking applications
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <div class="col-md-6">
+
+                <div class="" style="padding-top:10px"></div>
+                <div class="card">
+
+                  <div class="card__image-container">
+                    <img class="card__image"
+                      src="../../assets/images/express.png"
+                      alt="">
+                  </div>
+
+                  <svg class="card__svg" viewBox="0 0 800 500">
+
+                    <path
+                      d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500"
+                      stroke="transparent" fill="#333" />
+                    <path class="card__line"
+                      d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400"
+                      stroke="pink" stroke-width="3" fill="transparent" />
+                  </svg>
+
+                  <div class="card__content">
+                    <h1 class="card__title">Express JS</h1>
+                    <p>Express.js, or simply Express, is a web application framework for Node.js, released as free and
+                      open-source software under the MIT License. It is designed for building web applications and
+                      APIs.[3] It has been called the de facto standard server framework for Node.js.[4]
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mb-3">
+              <div class="col-md-6">
+
+                <div class="" style="padding-top:10px"></div>
+                <div class="card">
+
+                  <div class="card__image-container">
+                    <img class="card__image"
+                      src="../../assets/images/angular.png"
+                      alt="">
+                  </div>
+
+                  <svg class="card__svg" viewBox="0 0 800 500">
+
+                    <path
+                      d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500"
+                      stroke="transparent" fill="#333" />
+                    <path class="card__line"
+                      d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400"
+                      stroke="pink" stroke-width="3" fill="transparent" />
+                  </svg>
+
+                  <div class="card__content">
+                    <h1 class="card__title">Angular JS</h1>
+                    <p>The Angular JS 7 version is primarily focused on the Ivy project, which has been going on since
+                      past release. The Ivy project is basically rewriting the Angular compiler and runtime code to make
+                      it better, faster, and smaller.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <div class="col-md-6">
+
+                <div class="" style="padding-top:10px"></div>
+                <div class="card">
+
+                  <div class="card__image-container">
+                    <img class="card__image" src="../../assets/images/ai-sun-type.gif" alt="">
+                  </div>
+
+                  <svg class="card__svg" viewBox="0 0 800 500">
+
+                    <path
+                      d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500"
+                      stroke="transparent" fill="#333" />
+                    <path class="card__line"
+                      d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400"
+                      stroke="pink" stroke-width="3" fill="transparent" />
+                  </svg>
+
+                  <div class="card__content" style="padding: 10px">
+                    <h1 class="card__title">AI</h1>
+                    <p>In computer science, artificial intelligence (AI), sometimes called machine intelligence, is intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans. Colloquially, the term "artificial intelligence" is often used to describe machines (or computers) that mimic "cognitive" 
+                      functions that humans associate with the human mind, such as "learning" and "problem solving".[1]
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <div class="col-md-6">
+
+                <div class="" style="padding-top:10px"></div>
+                <div class="card">
+
+                  <div class="card__image-container">
+                    <img class="card__image" src="../../assets/images/bigdata.gif" alt="">
+                  </div>
+
+                  <svg class="card__svg" viewBox="0 0 800 500">
+
+                    <path
+                      d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500"
+                      stroke="transparent" fill="#333" />
+                    <path class="card__line"
+                      d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400"
+                      stroke="pink" stroke-width="3" fill="transparent" />
+                  </svg>
+
+                  <div class="card__content" style="padding: 10px">
+                    <h1 class="card__title">Big Data</h1>
+                    <p>Big data is a term that describes the large volume of data – both structured and unstructured – that inundates a business on a day-to-day basis. But it's not the amount of data that's important. ... 
+                      Big data can be analyzed for insights that lead to better decisions and strategic business moves.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "white";
+    }
+    </script>
+<!-- <div class="card-deck">
+
+
+  <div class="card mb-6">
+
+
+    <div class="view overlay">
+      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+
+    <div class="card-body">
+
+
+      <h4 class="card-title">Card title</h4>
+
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+    </div>
+
+  </div>
+
+
+ 
+  <div class="card mb-6">
+
+    
+    <div class="view overlay">
+      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    
+    <div class="card-body">
+  
+      <h4 class="card-title">Card title</h4>
+     
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+     
+      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+    </div>
+
+  </div>
+  
+
+ 
+  <div class="card mb-6">
+
+    <div class="view overlay">
+      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+   
+    <div class="card-body">
+
+     
+      <h4 class="card-title">Card title</h4>
+     
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+     
+      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+    </div>
+
+  </div>
+ 
+
+</div>
+ -->

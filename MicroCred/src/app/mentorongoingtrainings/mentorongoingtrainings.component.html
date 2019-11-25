@@ -1,0 +1,53 @@
+<div class="container" style="padding: 20px">
+    <h2>On Going Trainings</h2>
+    
+    <table border="1" cellspacing="0" cellpadding="15">
+      <tr><th>ID</th><th>Course Name</th><th>Mentor Name</th><th>Student Name</th><th>Progress</th><th>End Date</th><th>Progress Update</th></tr>
+      <tr *ngFor = "let oneOf of trainings">
+        <td>{{oneOf.id}}</td>
+                <td>{{oneOf.courseName}}</td>
+                <td>{{oneOf.mentorFirstName}}</td>
+                <td>{{oneOf.userFirstName}}</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated text-dark" style="font-weight: bold;" role="progressbar"  [style.width.px]="oneOf.progress">
+                          {{oneOf.progress}}%
+                        </div>
+                      </div>
+                </td>
+                <td>{{oneOf.endDate}}</td>
+                
+
+                <td>
+                    <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#myModal"
+                      (click)="getProgress(oneOf.id)">Update Progress</button>
+                  </td>
+        
+      </tr>
+    </table>
+    </div>
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content" *ngIf="model">
+              <form>
+              <div class="modal-header">
+                <h4 class="modal-title">Update Progress</h4>
+              </div>
+              <div class="modal-body" style="text-align: left">
+                <select [(ngModel)]="model.progress" name="progress" class="form-control rounded">
+                  <option value="0">0%</option>
+                  <option value="25">25%</option>
+                  <option value="50">50%</option>
+                  <option value="75">75%</option>
+                  <option value="100">100%</option>
+                </select>
+              </div>
+              <div class="modal-footer">
+                <button class="btn d-inline" (click)="updateProgress(model.id)"><i class="fa fa-edit"></i>Update</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>

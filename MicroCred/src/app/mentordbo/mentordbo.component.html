@@ -1,0 +1,51 @@
+<div class="container" style="padding-top: 100px; width: 2500px;">
+    <div class="row">
+        <div>
+            <div class="card-deck">
+                <div class="card" style="width:200px; height:250px; color: white;">
+                    <span style="padding: 15px; color: goldenrod" class="fa fa-user"></span>
+                    <div class="card-body">
+                        <h4 class="card-title">Mentor Profile</h4>
+                        <p>Check and Edit our Profile</p>
+                        <a routerLink="/mentordb/mentorprofile" class="btn btn-warning">View</a>
+
+                    </div>
+                </div>
+
+                <div class="card" style="width:200px; height:250px; color: white;">
+                    <span style="padding: 15px; color: goldenrod" class="fa fa-search"></span>
+                    <div class="card-body">
+                        <h4 class="card-title">Completed Trainings</h4>
+                        <p>Search for completed Courses</p>
+                        <a routerLink="/mentordb/mentorcompleted" class="btn btn-warning">View</a>
+
+                    </div>
+                </div>
+
+                <div class="card" style="width:200px; height:250px; color: white;">
+                    <span style="padding: 15px; color: goldenrod" class="fa fa-search"></span>
+                    <div class="card-body">
+                        <h4 class="card-title">OnGoing Trainings</h4>
+                        <p>Search for Ongoing Courses</p>
+                        <a routerLink="/mentordb/mentorongoing" class="btn btn-warning">View</a>
+
+                    </div>
+                </div>
+
+                <div class="card" style="width:200px; height:250px; color: white;">
+                    <span style="padding: 15px; color: goldenrod" class="fa fa-plus"></span>
+                    <div class="card-body">
+                        <h4 class="card-title">Add A Training</h4>
+                        <p>To the New Beginnings</p>
+                        <a routerLink="/mentordb/addtraining" class="btn btn-warning">Add</a>
+
+                    </div>
+                </div>
+
+               
+            </div>
+            <div>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>

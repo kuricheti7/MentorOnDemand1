@@ -1,0 +1,80 @@
+<section class="signup">
+    <div class="container">
+        <div class="signup-content">
+            <div class="signup-form">
+                <h2 class="form-title">Mentor SignUp!</h2>
+                <form method="POST" class="register-form" id="register-form" #mentorForm="ngForm"
+                    [mustMatch]="['password', 'repass']" novalidate>
+                    <div class="form-group">
+                        <label for="name"><i class="fa fa-id-card-o"></i></label>
+                        <input type="text" #firstname="ngModel" [class.is-invalid]="firstname.touched && firstname.invalid"
+                            class="form-control" [(ngModel)]="registerMentorData.firstname" name="firstname"
+                            placeholder="Your First Name" required />
+                        <small class="text-danger" [class.d-none]="firstname.valid || firstname.untouched">FirstName is
+                            Required!</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name"><i class="fa fa-id-card"></i></label>
+                        <input type="text" #lastname="ngModel" [class.is-invalid]="lastname.touched && lastname.invalid"
+                            class="form-control" [(ngModel)]="registerMentorData.lastname" name="lastname"
+                            placeholder="Your Last Name" required />
+                        <small class="text-danger" [class.d-none]="lastname.valid || lastname.untouched">LastName is
+                            Required!</small>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email"><i class="fa fa-envelope-o"></i></label>
+                        <input type="text" class="form-control" #email="ngModel"
+                            [class.is-invalid]="email.touched && email.invalid" [(ngModel)]="registerMentorData.email"
+                            name="email"  pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" placeholder="Your Email" required />
+                        <div *ngIf="email.errors && (email.valid || email.touched)">
+                            <small class="text-danger" *ngIf="email.errors.required">Email is Required</small>
+                            <small class="text-danger" *ngIf="email.errors.pattern"> Invalid Email Pattern</small>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="form-group">
+                        <label for="pass"><i class="fa fa-key"></i></label>
+                        <input type="password" class="form-control" #pass="ngModel" #password="ngModel"
+                            [class.is-invalid]="password.touched && password.invalid"
+                            [(ngModel)]="registerMentorData.password" name="password" placeholder="Password" required />
+                        <div *ngIf="password.errors && (password.valid || password.touched)">
+                            <small class="text-danger" *ngIf="password.errors.required">Password is Required</small>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="re-pass"><i class="fa fa-unlock-alt"></i></label>
+                        <input type="password" class="form-control" #repass="ngModel"
+                            [class.is-invalid]="pass.touched && pass.invalid" [(ngModel)]="registerMentorData.repass"
+                            name="repass" placeholder="Repeat your password" required />
+
+                        <div *ngIf="repass.errors && (repass.valid || repass.touched)">
+                            <small class="text-danger" *ngIf="repass.errors.required">Confirm Password is
+                                Required</small>
+                            <small class="text-danger" *ngIf="repass.errors.mustMatch"> Passwords doesnt Match
+                            </small>
+                            </div> 
+                        </div>
+
+                        <div class="form-group form-button">
+                            <input type="submit" [disabled]="mentorForm.form.invalid" (click)="registerMentor()"
+                                name="signup" id="signup" class="form-submit" value="Register" />
+                        </div>
+                </form>
+            </div>
+            <div class="signup-image">
+                <figure><img src="../../assets/images/mentor.jpg" alt="sing up image"></figure>
+                <a routerLink="/mentorlogin" class="signup-image-link">I am already member</a>
+            </div>
+        </div>
+    </div>
+</section>

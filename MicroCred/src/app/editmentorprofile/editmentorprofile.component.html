@@ -1,0 +1,150 @@
+<div class="py-5">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <span class="anchor"></span>
+
+            <!-- form card login -->
+            <div class="card rounded-0">
+                <div class="card-header">
+                    <h3 class="mb-0">Mentor Profile</h3>
+                </div>
+                <div class="card-body">
+                    <form class="form" #MentorForm="ngForm">
+
+                        <div class="form-group"
+                            [class.has-error]="idcontrol.invalid && idcontrol.touched"
+                            [class.has-success]="idcontrol.valid">
+                            <label for="password" class="control-label">Mentor Id</label>
+                            <input type="text" [(ngModel)]="mentordetails.id" name="id"
+                             class="form-control rounded-0" #idcontrol="ngModel" required >
+                               
+                            <span class="help-block text-danger"
+                                *ngIf="idcontrol.invalid && idcontrol.touched">
+                                Course Id is Required
+                            </span>
+                        </div>
+
+                        <div class="form-group"
+                            [class.has-error]="name.invalid && name.touched"
+                            [class.has-success]="name.valid">
+                            <label for="email" class="control-label">First Name</label>
+                            <input type="text" [(ngModel)]="mentordetails.firstName" 
+                            
+                                name="firstname" class="form-control rounded-0" #name="ngModel"
+                                required >
+                            <span class="help-block text-danger"
+                                *ngIf="name.invalid && name.touched">
+                                First Name is Required
+                            </span>
+                        </div>
+
+                        <div class="form-group"
+                            [class.has-error]="name.invalid && name.touched"
+                            [class.has-success]="name.valid">
+                            <label for="name" class="control-label">Last Name</label>
+                            <input type="text" [(ngModel)]="mentordetails.lastName" 
+                            
+                                name="lastname" class="form-control rounded-0" #name="ngModel"
+                                required >
+                            <span class="help-block text-danger"
+                                *ngIf="name.invalid && name.touched">
+                                Last Name is Required
+                            </span>
+                        </div>
+
+                        <div class="form-group"
+                            [class.has-error]="email.invalid && email.touched"
+                            [class.has-success]="email.valid">
+                            <label for="email" class="control-label"> Email</label>
+                            <input type="text" [(ngModel)]="mentordetails.email"
+                            
+                                name="email" class="form-control rounded-0" #email="ngModel"
+                                required >
+                            <span class="help-block text-danger"
+                                *ngIf="email.invalid && email.touched">
+                                Email is Required
+                            </span>
+                        </div>
+
+                        <div class="form-group"
+                            [class.has-error]="linkedinurl.invalid && linkedinurl.touched"
+                            [class.has-success]="linkedinurl.valid">
+                            <label for="linkedinurl" class="control-label">Linked In Url</label>
+                            <input type="text" [(ngModel)]="mentordetails.linkedInUrl" name="linkedInUrl"
+                            
+                                class="form-control rounded-0" #linkedinurl="ngModel" required >
+                            <span class="help-block text-danger"
+                                *ngIf="linkedinurl.invalid && linkedinurl.touched">
+                                Linked In Url is Required
+                            </span>
+                        </div>
+
+                        <div class="form-group"
+                            [class.has-error]="contactnum.invalid && contactnum.touched"
+                            [class.has-success]="contactnum.valid">
+                            <label for="contactnum" class="control-label">Contact Number</label>
+                            <input type="text" [(ngModel)]="mentordetails.phoneNumber" name="phoneNumber"
+                            
+                                class="form-control rounded-0" #contactnum="ngModel" required >
+                            <span class="help-block text-danger"
+                                *ngIf="contactnum.invalid && contactnum.touched">
+                                Contact Number is Required
+                            </span>
+                        </div>
+
+                        <div class="form-group"
+                            [class.has-error]="interest.invalid && interest.touched"
+                            [class.has-success]="interest.valid">
+                            <label for="interest" class="control-label">Years of Experience</label>
+                            <input type="number" [(ngModel)]="mentordetails.yearsOfExp" name="yearsOfExp"
+                                #interest="ngModel"
+                                class="form-control rounded-0" #addCoursecoursefeeControl="ngModel" required >
+                            <span class="help-block text-danger"
+                                *ngIf="interest.invalid && interest.touched">
+                                Years of Experience is Required
+                            </span>
+                        </div>
+
+                         
+                        <!-- <div class="form-group"
+                            [class.has-error]="addCourseDescriptionControl.invalid && addCourseDescriptionControl.touched"
+                            [class.has-success]="addCourseDescriptionControl.valid">
+                            <label for="email" class="control-label">Course Details</label>
+                            <input type="text" [(ngModel)]="courseUpdateData.cdesc"
+                           
+                                name="cdesc" class="form-control rounded-0"
+                                #addCourseDescriptionControl="ngModel" required>
+                            <span class="help-block text-danger"
+                                *ngIf="addCourseDescriptionControl.invalid && addCourseDescriptionControl.touched">
+                                Course Details is Required
+                            </span>
+                        </div>
+
+                        <div class="form-group"
+                            [class.has-error]="addCourseDateControl.invalid && addCourseDateControl.touched"
+                            [class.has-success]="addCourseDateControl.valid">
+                            <label for="email" class="control-label">Duration</label>
+                            <input type="text" [(ngModel)]="courseUpdateData.duration" id="coursetiming"
+                            
+                                name="duration" class="form-control rounded-0" #addCourseDateControl="ngModel"
+                                required>
+                            <span class="help-block text-danger"
+                                *ngIf="addCourseDateControl.invalid && addCourseDateControl.touched">
+                                Duration is Required
+                            </span>
+                        </div>
+ -->
+
+                        <button type="button" (click)="editMentorDetails()" [disabled]="MentorForm.invalid"
+                            class="btn btn-primary float-right">Update</button>
+                    </form>
+                </div>
+                <!--/card-block-->
+            </div>
+            <!-- /form card login -->
+
+        </div>
+
+
+    </div>
+</div>

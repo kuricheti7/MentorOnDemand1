@@ -1,0 +1,75 @@
+<div style="padding: 20px"></div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-lg-8">
+            <h1 class="h1">
+                Add a Training <small>New Things coming up! :)</small></h1>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="well well-sm">
+                <form #courseForm="ngForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="subject">
+                                    Course name</label>
+                                <select type="number" class="form-control" [(ngModel)]="TrainingData.id" name="id"
+                                    #cname="ngModel" placeholder="Please Select One" required="required">
+                                    <option disabled selected="selected">--Select One--</option>
+                                    <option *ngFor = "let course of courses" value={{course.id}}>{{course.courseName}}</option>
+                                </select>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="subject">
+                                    Commission Fee</label>
+                                <input type="number" class="form-control" [(ngModel)]="TrainingData.commissionAmount" name="commissionAmount"
+                                    #commissionAmount="ngModel" placeholder="Cost in Rupees" required="required" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">
+                                    Start Date</label>
+                                <input type="date" class="form-control" [(ngModel)]="TrainingData.startDate" name="startDate"
+                                    #startDate="ngModel" placeholder=" Start Date" required="required" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">
+                                    End Date</label>
+                                <input type="date" class="form-control" [(ngModel)]="TrainingData.endDate" name="endDate"
+                                    #endDate="ngModel" placeholder=" End Date" required="required" />
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Description</label>
+                                <textarea name="message" [(ngModel)]="TrainingData.coursedesc" name="coursedesc"
+                                    #coursedesc="ngModel" id="message" class="form-control" rows="8" cols="25"
+                                    required="required" placeholder="write the description about the course"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <button type="submit" (click)="addTraining()" class="btn btn-primary pull-right"
+                                id="btnContactUs">
+                                Add Course</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="container" style="padding: 20px">
+    <h2>Payments List</h2>
+    
+    <table border="1" cellspacing="0" cellpadding="15">
+      <tr><th>ID</th><th>Course Name</th><th>Fee</th><th>User ID</th><th>Training ID</th><th>Commission</th><th>Payment Status</th></tr>
+      <tr *ngFor = "let pay of payments">
+        <td>{{pay.id}}</td>
+                <td>{{pay.courseName}}</td>
+                <td>{{pay.fee}}</td>
+                <td>{{pay.userId}}</td>
+                <td>{{pay.trainingDetailsId}}</td>
+                <td>{{pay.commission}}</td>
+                
+                <td>{{pay.paymentStatus}}</td>
+               
+        
+      </tr>
+    </table>
+    </div>

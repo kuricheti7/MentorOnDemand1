@@ -1,0 +1,46 @@
+<div class="image">
+  <section id="intro" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+        <div class="col-md-6 intro-info order-md-first order-last">
+          <h2>One Stop<br>for all Your <br>
+            <span>Solutions!</span></h2>
+          <div>
+            <div class="container text-center">
+              <h1>{{title}}</h1>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="search-hero">
+                  <input class="form-control" id="myInput" type="text" name="searchText" 
+                    placeholder="Search...">
+                </div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>CourseName</th>
+                      
+                      <th>MentorName</th>
+                    </tr>
+                  </thead>
+                  <tbody id="myTable">
+                    <tr *ngFor="let course of courses">
+                      <td>{{course.cname}}</td>
+                      
+                      <td>{{course.ctrainer}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 intro-img order-md-last order-first">
+          <img src="../../assets/images/intro-img.svg" alt="" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
