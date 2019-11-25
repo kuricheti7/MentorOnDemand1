@@ -5720,11 +5720,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\MentorOnDemandNew\\StudentLibrary\\StudentLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\MentorOnDemand1\\MentorOnDemandNew\\StudentLibrary\\StudentLibrary.csproj",
       "projectName": "StudentLibrary",
-      "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemandNew\\StudentLibrary\\StudentLibrary.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand1\\MentorOnDemandNew\\StudentLibrary\\StudentLibrary.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\MentorOnDemandNew\\StudentLibrary\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand1\\MentorOnDemandNew\\StudentLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

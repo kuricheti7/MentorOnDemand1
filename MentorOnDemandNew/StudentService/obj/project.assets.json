@@ -5741,11 +5741,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\MentorOnDemandNew\\StudentService\\StudentService.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\MentorOnDemand1\\MentorOnDemandNew\\StudentService\\StudentService.csproj",
       "projectName": "StudentService",
-      "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemandNew\\StudentService\\StudentService.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand1\\MentorOnDemandNew\\StudentService\\StudentService.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\MentorOnDemandNew\\StudentService\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand1\\MentorOnDemandNew\\StudentService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5761,8 +5761,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\HP\\Desktop\\MentorOnDemandNew\\StudentLibrary\\StudentLibrary.csproj": {
-              "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemandNew\\StudentLibrary\\StudentLibrary.csproj"
+            "C:\\Users\\HP\\Desktop\\MentorOnDemand1\\MentorOnDemandNew\\StudentLibrary\\StudentLibrary.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand1\\MentorOnDemandNew\\StudentLibrary\\StudentLibrary.csproj"
             }
           }
         }

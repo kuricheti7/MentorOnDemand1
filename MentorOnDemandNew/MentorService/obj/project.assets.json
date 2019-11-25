@@ -5741,11 +5741,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\MentorOnDemandNew\\MentorService\\MentorService.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\MentorOnDemand1\\MentorOnDemandNew\\MentorService\\MentorService.csproj",
       "projectName": "MentorService",
-      "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemandNew\\MentorService\\MentorService.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand1\\MentorOnDemandNew\\MentorService\\MentorService.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\MentorOnDemandNew\\MentorService\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand1\\MentorOnDemandNew\\MentorService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5761,8 +5761,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\HP\\Desktop\\MentorOnDemandNew\\MentorLibrary\\MentorLibrary.csproj": {
-              "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemandNew\\MentorLibrary\\MentorLibrary.csproj"
+            "C:\\Users\\HP\\Desktop\\MentorOnDemand1\\MentorOnDemandNew\\MentorLibrary\\MentorLibrary.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand1\\MentorOnDemandNew\\MentorLibrary\\MentorLibrary.csproj"
             }
           }
         }

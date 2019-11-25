@@ -5741,11 +5741,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\MentorOnDemandNew\\AdminService\\AdminService.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\MentorOnDemand1\\MentorOnDemandNew\\AdminService\\AdminService.csproj",
       "projectName": "AdminService",
-      "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemandNew\\AdminService\\AdminService.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand1\\MentorOnDemandNew\\AdminService\\AdminService.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\MentorOnDemandNew\\AdminService\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand1\\MentorOnDemandNew\\AdminService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5761,8 +5761,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\HP\\Desktop\\MentorOnDemandNew\\AdminLibrary\\AdminLibrary.csproj": {
-              "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemandNew\\AdminLibrary\\AdminLibrary.csproj"
+            "C:\\Users\\HP\\Desktop\\MentorOnDemand1\\MentorOnDemandNew\\AdminLibrary\\AdminLibrary.csproj": {
+              "projectPath": "C:\\Users\\HP\\Desktop\\MentorOnDemand1\\MentorOnDemandNew\\AdminLibrary\\AdminLibrary.csproj"
             }
           }
         }
