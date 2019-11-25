@@ -28,11 +28,11 @@ namespace APIGateway
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            
-
-            services.AddControllers();
             services.AddCors();
             services.AddOcelot();
+
+            services.AddControllers();
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,7 +46,7 @@ namespace APIGateway
 
             app.UseHttpsRedirection();
 
-            await app.UseOcelot();
+           
              app.UseCors(policy => policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseRouting();
            
@@ -58,6 +58,7 @@ namespace APIGateway
             {
                 endpoints.MapControllers();
             });
+            await app.UseOcelot();
         }
     }
 }

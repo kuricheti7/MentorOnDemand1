@@ -7,44 +7,44 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 //Student
-  private _registerUserUrl = "https://localhost:44346/authservice/register";
-  private _loginUserUrl = "https://localhost:44346/authservice/login";
-  private _getUserDetailsUrl = "https://localhost:44346/studentservice";
-  private _updateUserUrl = "https://localhost:44346/studentservice";
-  private _blockedUrl = "https://localhost:44346/adminservice/blockunblock";
-  private _getCourseByNameUrl = "https://localhost:44346/adminservice";
-  private _StudentUpcomingUrl = "https://localhost:44346/studentservice/studupcom"
-  private _StudentOngoingUrl = "https://localhost:44346/studentservice/studongng"
-  private _StudentComptdUrl = "https://localhost:44346/studentservice/studcomp"
-  private _addPaymentUrl =  "https://localhost:44346/studentservice/addpayment"
-  private _applyTrainingUrl =  "https://localhost:44346/studentservice/applytraining"
+  private _registerUserUrl = "http://localhost:9095/authservice/register";
+  private _loginUserUrl = "http://localhost:9095/authservice/login";
+  private _getUserDetailsUrl = "http://localhost:9095/studentservice";
+  private _updateUserUrl = "http://localhost:9095/studentservice";
+  private _blockedUrl = "http://localhost:9095/adminservice/blockunblock";
+  private _getCourseByNameUrl = "http://localhost:9095/adminservice";
+  private _StudentUpcomingUrl = "http://localhost:9095/studentservice/studupcom"
+  private _StudentOngoingUrl = "http://localhost:9095/studentservice/studongng"
+  private _StudentComptdUrl = "http://localhost:9095/studentservice/studcomp"
+  private _addPaymentUrl =  "http://localhost:9095/studentservice/addpayment"
+  private _applyTrainingUrl =  "http://localhost:9095/studentservice/applytraining"
 
   //Mentor
-  private _registerMentorUrl = "https://localhost:44346/authservice/register";
-  private _loginMentorUrl = "https://localhost:44346/authservice/login";
-  private _getMentorDetailsUrl = "https://localhost:44346/mentorservice";
-  private _updateMentorUrl = "https://localhost:44346/mentorservice";
-  private _addTrainingUrl = "https://localhost:44346/mentorservice/addtraining"
-  private _MentorUpcomingUrl = "https://localhost:44346/mentorservice/mentorupcom"
-  private _MentorOngoingUrl = "https://localhost:44346/mentorservice/mentorongng"
-  private _MentorComptdUrl = "https://localhost:44346/mentorservice/mentorcomp"
+  private _registerMentorUrl = "http://localhost:9095/authservice/register";
+  private _loginMentorUrl = "http://localhost:9095/authservice/login";
+  private _getMentorDetailsUrl = "http://localhost:9095/mentorservice";
+  private _updateMentorUrl = "http://localhost:9095/mentorservice";
+  private _addTrainingUrl = "http://localhost:9095/mentorservice/addtraining"
+  private _MentorUpcomingUrl = "http://localhost:9095/mentorservice/mentorupcom"
+  private _MentorOngoingUrl = "http://localhost:9095/mentorservice/mentorongng"
+  private _MentorComptdUrl = "http://localhost:9095/mentorservice/mentorcomp"
   
  //Admin
-  private _loginAdminUrl = "https://localhost:44346/authservice/login";
-  private _getUserListUrl = "https://localhost:44346/adminservice/studentlist";
-  private _getMentorListUrl ="https://localhost:44346/adminservice/mentorlist";
-  private _getTrainingByIdUrl = "https://localhost:44346/mentorservice/gettraining";
-  private _getTrainingListUrl = "https://localhost:44346/studentservice/traininglist";
-  private _getPaymentListUrl = "https://localhost:44346/studentservice/paymentlist";
+  private _loginAdminUrl = "http://localhost:9095/authservice/login";
+  private _getUserListUrl = "http://localhost:9095/adminservice/studentlist";
+  private _getMentorListUrl ="http://localhost:9095/adminservice/mentorlist";
+  private _getTrainingByIdUrl = "http://localhost:9095/mentorservice/gettraining";
+  private _getTrainingListUrl = "http://localhost:9095/studentservice/traininglist";
+  private _getPaymentListUrl = "http://localhost:9095/studentservice/paymentlist";
  
  
  //Courses
-  private _getCourseListUrl = "https://localhost:44346/adminservice/courselist";
-  private _getCourseDetailsUrl = "https://localhost:44346/adminservice";
-  private _updateCourseUrl = "https://localhost:44346/adminservice";
-  private _addCourseUrl = "https://localhost:44346/adminservice/addcourse";
-  private _deleteCourseUrl = "https://localhost:44346/adminservice/deletecourse"
-  private _updateTrainingProgressUrl = "https://localhost:44346/mentorservice/updateProgress"
+  private _getCourseListUrl = "http://localhost:9095/adminservice/courselist";
+  private _getCourseDetailsUrl = "http://localhost:9095/adminservice";
+  private _updateCourseUrl = "http://localhost:9095/adminservice";
+  private _addCourseUrl = "http://localhost:9095/adminservice/addcourse";
+  private _deleteCourseUrl = "http://localhost:9095/adminservice/deletecourse"
+  private _updateTrainingProgressUrl = "http://localhost:9095/mentorservice/updateProgress"
 
 
   constructor(private http: HttpClient, private _router: Router) { }
