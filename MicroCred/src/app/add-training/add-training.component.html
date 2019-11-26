@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-sm-8 col-lg-8">
             <h1 class="h1">
-                Add a Training <small>New Things coming up! :)</small></h1>
+                Add a Training </h1>
         </div>
     </div>
 </div>
@@ -35,6 +35,11 @@
                                     #commissionAmount="ngModel" placeholder="Cost in Rupees" required="required" />
                             </div>
 
+                            
+                        </div>
+
+
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="subject">
                                     Start Date</label>
@@ -47,17 +52,6 @@
                                     End Date</label>
                                 <input type="date" class="form-control" [(ngModel)]="TrainingData.endDate" name="endDate"
                                     #endDate="ngModel" placeholder=" End Date" required="required" />
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="name">
-                                    Description</label>
-                                <textarea name="message" [(ngModel)]="TrainingData.coursedesc" name="coursedesc"
-                                    #coursedesc="ngModel" id="message" class="form-control" rows="8" cols="25"
-                                    required="required" placeholder="write the description about the course"></textarea>
                             </div>
                         </div>
 

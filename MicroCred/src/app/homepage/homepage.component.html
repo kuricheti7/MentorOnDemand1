@@ -9,30 +9,6 @@
             <div class="container text-center">
               <h1>{{title}}</h1>
             </div>
-            <div class="container">
-              <div class="row">
-                <div class="search-hero">
-                  <input class="form-control" id="myInput" type="text" name="searchText" 
-                    placeholder="Search...">
-                </div>
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>CourseName</th>
-                      
-                      <th>MentorName</th>
-                    </tr>
-                  </thead>
-                  <tbody id="myTable">
-                    <tr *ngFor="let course of courses">
-                      <td>{{course.cname}}</td>
-                      
-                      <td>{{course.ctrainer}}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
           </div>
         </div>
 

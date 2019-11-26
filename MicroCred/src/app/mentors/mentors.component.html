@@ -16,7 +16,7 @@
               <div class="additional">
                 <div class="user-card">
                   <div class="level center">
-                    Level 13
+                    Trainers
                   </div>
                   <div class="points center">
                     5,312 Points
@@ -108,14 +108,14 @@
                   </svg>
                 </div>
                 <div class="more-info">
-                  <h1>{{user.firstname}}</h1>
+                  <h1>{{user.firstName}}</h1>
                   <div class="coords">
                     <span>Group Name</span>
-                    <span>Joined January 2019</span>
+                    
                   </div>
                   <div class="coords">
                     <span>{{user.email}}</span>
-                    <span>City, Country</span>
+                    <span>India</span>
                   </div>
                   <div class="stats">
                     <div>
@@ -124,9 +124,9 @@
                       <div class="value">2</div>
                     </div>
                     <div>
-                      <div class="title">Matches</div>
+                      <div class="title">Experience</div>
                       <i class="fa fa-gamepad"></i>
-                      <div class="value">27</div>
+                      <div class="value">{{user.YearsOfExp}}</div>
                     </div>
 
                     <div>
@@ -138,10 +138,8 @@
                 </div>
               </div>
               <div class="general">
-                <h1>{{user.firstname}} {{user.lastname}}</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a volutpat mauris, at molestie lacus.
-                  Nam
-                  vestibulum sodales odio ut pulvinar.</p>
+                <h1>{{user.firstName}} {{user.lastName}}</h1>
+                <p>Expertise to Train you for the Best Of You.</p>
                 <span class="more">Mouse over the card for more info</span>
               </div>
             </div>
